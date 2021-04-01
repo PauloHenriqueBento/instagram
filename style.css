@@ -1,0 +1,154 @@
+/* CSS GERAL*/
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    background: rgb(243, 243, 243);
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100vh;
+}
+
+/* Parte do cell*/
+.cell{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.cell-img{
+    height: 50rem;
+}
+
+/* Parte direita */
+.direito{
+    display: flex;
+    align-items: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+/* Box que tem cor diferente e uma border*/
+.grupo_fundo{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+/* Profile */
+.grupo_fundo:nth-child(1){
+    min-height: 10rem;
+}
+
+.logo{
+    height: 3rem;
+}
+
+.profile{
+    margin-top: 7px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.button{
+    margin-top: 1rem;
+    background: #0095f6;
+    color: #fff;
+    padding: 9px;
+    border-radius: 4px;
+}
+
+.button:nth-last-child(1){
+    margin-top: 1rem;
+    background: #fff;
+    color: #0095f6;
+}
+
+/* Não é a pessoa */
+.grupo_fundo:nth-last-child(1){
+    margin-top: 1rem;
+    color: rgb(160, 160, 160);
+    
+}
+
+.grupo_fundo:nth-last-child(2) a{ 
+    color:#0095f6;
+}
+
+/* Download*/
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
+}
+
+
+/* Responsividade */
+
+@media(max-width: 1024px){
+    .container{
+        width: 90%
+    }
+}
+
+@media(max-width: 650px){
+    .container{
+        width: 90%;
+    }
+
+    .cell{
+        display: none;
+    }
+    
+    .direito{
+        width: 100%;
+    }
+}
